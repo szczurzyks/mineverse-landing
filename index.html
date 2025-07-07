@@ -1,34 +1,282 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MineVerse.pl - Anarchia SMP</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Logo.svg" type="image/svg+xml">
+  <title>Strona Główna</title>
+
+  <!-- Czcionki Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+  <!-- Główny CSS -->
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header>
-    <h1>MineVerse.pl</h1>
-    <p class="subtitle">Serwer Minecraft - Anarchia SMP</p>
+  <nav class="navbar">
+    <div class="wrapper">
+      <a href="/">
+        <div class="logo">
+          <img src="Logo.png" alt="Logo">
+        </div>
+      </a>
+        <div class="burger" id="burger">
+          <svg id="burger_icon" width="42" height="42" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <rect id="top" x="0.5" y="0.5" width="41" height="6" rx="2.5" fill="#000" stroke="#000"/>
+              <rect id="middle" x="0.5" y="11.5" width="41" height="6" rx="2.5" fill="#000" stroke="#000"/>
+              <rect id="bottom" x="0.5" y="22.5" width="41" height="6" rx="2.5" fill="#000" stroke="#000"/>
+            </g>
+          </svg>
+        </div>
+    
+    <div class="menu" id="menu">
+      <div class="menu-item"><a href="/">Główna</a></div>
+      <div class="menu-item"><a href="/dystrykty/">Dystrykty</a></div>
+      <div class="menu-item"><a href="/transmisje/">Transmisje</a></div>
+      <div class="menu-item"><a href="/info/">Info</a></div>     
+    </div>
+  </nav>
+</div>
+  <header class="hero">
+    
+     <div id="bg-video-desktop" class="bg-video bg-blur">
+      <img src="bg_herov2.png" alt="Background">
+     </div>
+     <!-- Background videos 
+    <video autoplay muted loop playsinline preload="none"id="bg-video-desktop" class="bg-video bg-blur">
+      <source src="hero-bg-video.mp4" type="video/mp4">
+    </video>-->
+    <!-- Optional dark overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Foreground content -->
+    <div class="hero_content">
+      <div id="video-container"></div>
+      <div class="image-mask">
+        <div class="hero-timer-box">
+          <img src="logoV2.svg" alt="Logo" class="logov2">
+          <div>
+            <p class="timer-text">Największy turniej igrzysk śmierci w minecraft <br> odbędzie się już niedługo</p>
+            <div class="hero-timer lilita-font" id="timer">
+              10:00:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hearth-banner">
+      <img src="heart_banner.webp" alt="Hearth" class="hearth-image">
+        <div class="hearth-banner-content wrapper">
+          <h1>NAJWIĘKSZA NAGRODA W HISTORII POLSKIEGO MINECRAFTA!</h1>
+          <div id="prize" class="prize-counter">0zł</div>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="info">
-      <h2>Dołącz do nas!</h2>
-      <p>Tryb: <strong>Anarchia SMP</strong> — Bez zasad, pełna wolność, totalna anarchia!</p>
-      <p>IP serwera: <span class="ip">mineverse.gxy.pl</span></p>
-      <p>Grając u nas, pamiętaj: tu rządzi chaos i Twoja własna strategia.</p>
+  
+    <section class="transmission-section">
+      <div class="wrapper">
+        <div class="transmission-container">
+          <div class="img-box scroll-slide-left">
+            <img src="miniatorka.webp" alt="Transmisja" class="transmission-image">
+          </div>
+          <div class="transmission-text scroll-slide-right">
+            <h2>OFICJALNA TRANSMISJA</h2>
+            <p>Oglądaj całe wydarzenie z perspektywy widza i poczuj te niesamowite emocje już 13 czerwca o godzinie 18:00!</p>
+          </div>
+        </div>
+      </div>
+      </section>
+    <div class="separator">  
+      <img src="separator.svg" alt="Separator" class="separator-image"></i>
+    </div>
+      
+    <section class="event-section ">
+      <div class="wrapper">
+      <div class="event-container">
+        <div class="img-box scroll-slide-left">
+          <h2>O EVENCIE</h2>
+          <img src="render.webp" alt="Minecraft guy" class="event-image">
+        </div>
+        <div class="event-text scroll-slide-right">
+          <p>Pierwszy taki turniej w Polsce, w którym 100 najpopularniejszych twórców internetowych zmierzy się ze sobą, walcząc na ogromnej mapie, pełnej niebezpieczeństw, o nagrodę wartości <b>250 tysięcy złotych!<b></p>
+        </div>
+      </div>
+      </div>
     </section>
+    <footer class="footer-section">
+      <div class="footer wrapper">
+        <div class="footer-left">
+          <img src="logo-footer.png" alt="logo" class="footer-logo">
+        </div>
+        <div class="footer-text">
+          © 2025 Turniej nie jest w żaden sposób powiązany z firmą Mojang lub Microsoft.
+        </div>
+        <div class="footer-icons">
+          <a href="https://www.youtube.com/@Sagi1"target="_blank"><img src="/yt-logo.png" alt="YouTube"></a>
+          <a href="https://www.instagram.com/sagipl/"target="_blank"><img src="/ig-logo.png" alt="Instagram"></a>
+          <a href="https://discord.gg/sagi" target="_blank"><img src="/discord-logo.png" alt="Discord"></a>
+        </div>
+      </div>
+    </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-    <section class="cta">
-      <h2>Chcesz zagrać?</h2>
-      <p>Połącz się z serwerem przez Minecraft i zacznij swoją przygodę!</p>
-      <a href="minecraft://connect/mineverse.gxy.pl" class="btn">Połącz się teraz</a>
-    </section>
-  </main>
+      // ⏱ TIMER
+function startCountdown(targetDateStr, elementId) {
+  const countdownElement = document.getElementById(elementId);
+  const targetDate = new Date(targetDateStr).getTime();
 
-  <footer>
-    <p>© 2025 MineVerse.pl | Serwer Minecraft Anarchia SMP</p>
-  </footer>
+  const interval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      clearInterval(interval);
+      countdownElement.classList.remove("disabled-link");
+      countdownElement.classList.add("live-link");
+      countdownElement.innerText = "LIVE";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (days === 0 && hours === 0 && minutes === 0) {
+      countdownElement.innerText = `${seconds} sek`;
+    } else if (days === 0 && hours === 0) {
+      countdownElement.innerText = `${minutes} min`;
+    } else {
+      countdownElement.innerText = `${days} dni ${hours}h`;
+    }
+  }, 1000);
+}
+    
+        startCountdown('2025-06-13T18:00:00', 'timer');
+    
+        // 💰 COUNTER
+        function animatePrizeCounter(el, finalValue, duration = 2000) {
+          let start = 0;
+          const increment = finalValue / (duration / 20);
+          const suffix = 'zł';
+    
+          const counter = setInterval(() => {
+            start += increment;
+            if (start >= finalValue) {
+              start = finalValue;
+              clearInterval(counter);
+            }
+            el.innerText = Math.floor(start).toLocaleString('pl-PL') + suffix;
+          }, 20);
+        }
+    
+        // 🔥 ANIMACJE + LICZNIK WSPÓLNIE
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            const el = entry.target;
+            if (entry.isIntersecting) {
+              // Animacja wejścia
+              if (el.classList.contains('scroll-slide-left') || el.classList.contains('scroll-slide-right')) {
+                el.style.transition = 'transform 0.6s ease-out, opacity 0.6s ease-out';
+                el.style.transform = 'translateX(0)';
+                el.style.opacity = 1;
+              }
+    
+              // Licznik
+              if (el.id === 'prize' && !el.classList.contains('counted')) {
+                el.classList.add('counted');
+                animatePrizeCounter(el, 250000);
+              }
+    
+              obs.unobserve(el); // rozłącz po animacji
+            }
+          });
+        }, { threshold: 0.4 });
+    
+        // 🔍 Obserwujemy wszystkie elementy z animacjami i licznik
+        const animatedElements = document.querySelectorAll('.scroll-slide-left, .scroll-slide-right, #prize');
+        animatedElements.forEach(el => {
+          // Ustaw stan początkowy
+          if (el.classList.contains('scroll-slide-left')) {
+            el.style.transform = 'translateX(-100px)';
+            el.style.opacity = 0;
+          }
+          if (el.classList.contains('scroll-slide-right')) {
+            el.style.transform = 'translateX(100px)';
+            el.style.opacity = 0;
+          }
+          observer.observe(el);
+        });
+    
+      });
+    </script>
+    <script>
+      const burger = document.getElementById('burger');
+      const menu = document.getElementById('menu');
+    
+      burger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        burger.classList.toggle('active');
+      });
+    
+      document.querySelectorAll('.menu-item a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('show');
+          burger.classList.remove('active');
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const container = document.getElementById("video-container");
+        const isMobile = window.innerWidth <= 860;
+    
+        // Dodaj klasę mobile-only lub desktop-only do kontenera
+        container.classList.add(isMobile ? "mobile-only" : "desktop-only");
+    
+        const video = document.createElement("video");
+        video.autoplay = true;
+        video.muted = true;
+        video.loop = true;
+        video.playsInline = true;
+        video.className = "bg-video clear";
+    
+        const source = document.createElement("source");
+        source.src = isMobile ? "zminay.mp4" : "zminay.mp4";
+        source.type = "video/mp4";
+    
+        video.appendChild(source);
+        container.appendChild(video);
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const banner = document.querySelector(".hearth-banner");
+        const oldImg = document.querySelector(".hearth-image");
+    
+        const isMobile = window.innerWidth <= 860;
+        const newImg = document.createElement("img");
+    
+        // Ustawienia nowego obrazka
+        newImg.src = isMobile ? "heart-banner-mobile.png" : "heart_banner.webp";
+        newImg.alt = "Hearth";
+        newImg.className = "hearth-image";
+    
+        // Zamień stary obrazek na nowy
+        if (oldImg) {
+          banner.replaceChild(newImg, oldImg);
+        } else {
+          banner.insertBefore(newImg, banner.firstChild);
+        }
+      });
+    </script>
+    
+    
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95baf39a5a310328","version":"2025.6.2","r":1,"token":"d4fb6260626e4198a2d319da5eec927b","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
 </body>
 </html>
